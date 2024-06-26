@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    background-color: #000d20;
+   /* background-image: url('stem\ backhround\ main2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: 10%; */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(11, 69, 71, 0.7); Adjust color and opacity for dulling effect */
+    z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+#header {
+    height: auto; /* Adjust height as needed */
+    width: auto;
+    background-image: url('header\ image.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+    background-position-x: 30%;
+    padding: 15px 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#logo {
+    height: 50px;
+}
+
+#moto {
+    font-weight: 650;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-left: 60px;
+}
+
+#techlogo {
+    height: 25px;
+}
+
+#search {
+    padding-left: 140px;
+    height: 30px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+#search:hover{
+    scale: 103%;
+}
+
+input {
+    height: 25px;
+    width: 210px;
+    background-color: rgb(15, 124, 128);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#login {
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-left: 50px;
+}
+
+#subheader {
+    background-color: #0f7c80;
+    height: 30px;
+    width:100vw;
+    display:flex;
+    justify-content: left;
+}
+
+#subheader ul {
+    display: flex;
+    justify-content: left; /* Use space-between if you want equal spacing on the ends */
+    width: 100%;
+    padding-left: 18px;
+    margin: 0;
+}
+
+li{
+    margin-top: 5px;
+    list-style-type: none;
+    display: inline;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+
+main{
+    display: flex;
+    height: 300px;
+    width: 85%;
+    margin: 3% 7.5% 0% 7.5%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#about{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 50%;
+    padding: 2%;
+    color: white;
+    /* margin: 3% 0% 0% 5%; */
+    background-color: rgba(1, 141, 146, 0.5);
+    border-radius: 8px;
+}
+
+#about h3{
+    margin: 3px 0px 0px 0px;
+}
+
+#about p{
+    text-indent: 3%;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#pic1 img:hover{
+        scale: 104%;
+}
+
+#heading{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(15, 124, 128, 0.5);
+    padding: 5px;
+    margin-top: 30px;
+    border-top: solid;
+    border-color: white;
+} 
+
+#heading h2{
+    margin: 0px;
+}
+
+.eventbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.visit{
+    height: 460px;
+    width: 350px;
+    background-color:rgba(15, 124, 128, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out; */
+    transition: all 1s ease-out;
+}
+
+.visit:hover{
+    scale: 104%;
+}
+
+.visit img{
+    height: 61.5%;
+    width: 100% ;
+}
+
+.content{
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.content h3{
+    font-size: medium;
+    font-family: sans-serif;
+    color: white;
+    margin: 10px 0px 5px 0px;
+}
+
+.content p{
+    font-size: small;
+    font-family: sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+.visit a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    background-color: #000d20;
+    padding: 5px;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.visit a:hover{
+    background-color: white;
+    color: #000d20;
+}
